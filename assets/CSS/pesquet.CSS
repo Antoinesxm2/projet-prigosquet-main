@@ -1,0 +1,79 @@
+body {
+    background-image: url("/assets/CSS/bck2.png"); /* Assurez-vous que le chemin vers l'image est correct */
+    background-size: cover; /* Couvre toute la zone disponible sans perdre les proportions */
+    background-position: center; /* Centre l'image dans la zone disponible */
+    background-repeat: no-repeat; /* Pour ne pas répéter l'image */
+    height: 100vh; /* Donne au body une hauteur minimale de 100% de la fenêtre de visualisation, si nécessaire */
+    margin: 0; /* Supprime les marges par défaut du navigateur */
+  }
+
+  h2 {
+    font-family: 'Orbitron', sans-serif; /* Utiliser la police Orbitron */
+    text-align: center; /* Centrer le texte */
+    color: #FFFFFF; /* Couleur du texte */
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent noir pour le distinguer */
+    padding: 10px; /* Espace autour du texte */
+    border: 2px solid #00FF00; /* Bordure futuriste vert néon */
+    display: inline-block; /* Pour que le fond et la bordure entourent juste le texte */
+    margin: 0 auto; /* Marge pour centrer le cadre et ajouter de l'espace autour */
+    border-radius: 10px; /* Bordures arrondies pour un look moderne */
+  }
+
+  .container {
+    text-align: center; /* Centre le contenu horizontalement */
+  }
+
+.fond-map-container {
+    position: relative;
+    width: 100%; /* ou la largeur spécifique que vous souhaitez */
+    height: 800px; /* Hauteur de l'image ou selon le besoin */
+    width: 800px;
+    margin: 0 auto;
+  }
+  
+  .fond-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cela garantit que l'image couvre tout le conteneur sans perdre ses proportions */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Assurez-vous que l'image reste en arrière-plan */
+    
+  }
+
+
+  #map.carte {
+    width: 100%;
+    height: 100%;
+    /* La largeur peut être ajustée selon les besoins, ou peut être définie à 100% si vous souhaitez que la carte couvre toute la largeur du conteneur */
+    
+    z-index: -1; /* Assurez-vous que la carte apparaisse au-dessus de l'image de fond */
+  }
+
+  .button-futuriste {
+    font-family: 'Orbitron', sans-serif; /* Utiliser la police Orbitron */
+    color: #FFFFFF; /* Couleur du texte */
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent noir pour le distinguer */
+    border: 2px solid #00FF00; /* Bordure futuriste vert néon */
+    padding: 10px 20px; /* Espace autour du texte */
+    cursor: pointer; /* Curseur de souris indiquant un bouton cliquable */
+    transition: all 0.3s ease; /* Animation de transition fluide */
+    border-radius: 5px; /* Bordures arrondies pour un look moderne */
+  }
+  
+  .button-futuriste:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Changement de couleur au survol */
+  }
+
+  p {
+    font-family: 'Orbitron', sans-serif; /* Utiliser la police Orbitron */
+    font-weight: bold; /* Mettre le texte en gras */
+    color: #00FF00; /* Couleur verte */
+  }
+
+  .align-items {
+    display: flex; /* Active Flexbox */
+    align-items: center; /* Centre les éléments verticalement */
+    gap: 50px; /* Ajoute un espace entre les éléments */
+  }
